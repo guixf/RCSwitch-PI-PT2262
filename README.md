@@ -5,7 +5,9 @@ with the raspberry pi.
 RCSwitch-pi and PT2262 encode 
 
 example:
+
 sendPT2262 112211001000 0 200
+
 sendPT2262 8位地址码4位数据码  PIN编号  最窄脉冲宽度（单位us）
   
 
