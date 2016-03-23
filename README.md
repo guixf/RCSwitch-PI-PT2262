@@ -1,12 +1,12 @@
 # About
-RCSwitch-piPT2262
+为了解决RCSwitch-pi不能发送PT2262编码格式的问题，修改相关文件
 rcswitch-pi-PT2262 is for controlling rc remote controlled power sockets 
 with the raspberry pi. 
 RCSwitch-pi and PT2262 encode 
 
 example:
 sendPT2262 112211001000 0 200
-sendPT2262 84 PIN us
+sendPT2262 8位地址码4位数据码 PIN编号 最窄脉冲宽度（单位us）
   
 
 
@@ -20,5 +20,5 @@ the library provided by the arduino.
 ## Usage
 
 First you have to install the [wiringpi](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/) library.
-After that you can compile the example program *send* by executing *make*. 
+After that you can compile the example program *sendPT2262* by executing *make*. 
 You may want to changet the used GPIO pin before compilation in the send.cpp source file.
